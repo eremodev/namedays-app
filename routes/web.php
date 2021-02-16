@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [NamedaysController::class, 'index']);
+Route::get('/namedays/{nameday}-{slug}', [NamedaysController::class, 'show']);
+Route::get('/autocomplete', [NamedaysController::class, 'autocomplete'])->name('autocomplete');
