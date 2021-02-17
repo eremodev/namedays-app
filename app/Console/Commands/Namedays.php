@@ -15,14 +15,14 @@ class Namedays extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'name-days:update';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Download or Update namedays table';
 
     /**
      * Create a new command instance.
